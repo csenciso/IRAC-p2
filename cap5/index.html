@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" type='text/css' href="./css/main.min.css">
+	<title>Very simple WebRTC application with a Node.js signalling server</title>
+</head>
+
+<body>
+	<div id="subjectTitle" class="subject-title">
+		<h1>IRAC - Equipo 12</h1>
+	</div>
+	<div id="chatDialog" class="chat-dialog">
+		<video id="localVideo" class="local-video" muted autoplay></video>
+		<video id="remoteVideo" class="remote-video" autoplay></video>
+		<div id="chat" class="chat">
+			<textarea rows="12" cols="60" id="dataChannelReceive" disabled></textarea>
+			<textarea rows="4" cols="60" name="usermsg" type="text" id="dataChannelSend" size="63"></textarea>
+			<button name="submitmsg" type="submit" id="sendButton" class="button" value="Send">Send</button>
+
+		</div>
+	</div>
+
+	<script src='/socket.io/socket.io.js'></script>
+	<script src='js/completeNodeClientWithDataChannel.js'></script>
+
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+html, body{
+    height: 100%;
+  }
+
+.subject-title {
+    height: 13.5%;
+    max-width: 100%;
+}
+
+.chat-dialog {
+    height: 79%;
+    max-width: 100%;
+    margin: 1% 1%;
+}
+
+.button-send {
+    height: 9%;
+    margin: 1% 1%;
+}
+
+.chat-text {
+    height: 19%;
+    margin: 1% 1%;
+}
+
+.chat-conversation {
+    height: 69%;
+}
+
+.local-video {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    right: 0
+}
+
+.remote-video {
+    max-width: 25%;
+    height: auto;
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    right: 0;
+    border-style:solid;
+    border-color:#FFFFFF;
+}
+
+.chat {
+    background: rgb(167, 165, 164);
+    opacity: 0.6;
+    max-width: 33%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    bottom: auto;
+    left: 0;
+}
